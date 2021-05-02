@@ -143,7 +143,7 @@ export default {
     },
   },
   created() {
-    this.socket = io('http://localhost:3002')
+    this.socket = io('https://calm-reef-47669.herokuapp.com:48396')
     const roomId = this.$route.query.id
     if (roomId) {
       this.socket.emit('partner-join', roomId)
@@ -156,7 +156,7 @@ export default {
   mounted() {
     this.isShowPopupCreateName = true
     if (this.isHost) {
-      const hostName = window.location.host
+      const hostName = 'calm-reef-47669.herokuapp.com'
       this.socket.on('host-id', (roomId) => {
         this.inviteLink = `${hostName}/?id=${roomId}`
         this.socket.on('partner-joined', () => {
