@@ -2,7 +2,7 @@
   <div class="toast" :class="{ show: show }">
     <div class="header">
       <h3>Mời bạn chơi cùng</h3>
-      <button v-clipboard:copy="invite" class="clipboard" @click="copyLink">
+      <button class="clipboard" @click="copyLink">
         {{ getCopyTitle }}
       </button>
     </div>
@@ -17,9 +17,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import VueClipboard from 'vue-clipboard2'
-Vue.use(VueClipboard)
 export default {
   props: {
     invite: { type: String, default: () => '' },
