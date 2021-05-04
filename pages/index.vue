@@ -143,7 +143,7 @@ export default {
     },
   },
   created() {
-    this.socket = io('localhost:5000')
+    this.socket = io('https://xucxac-server.herokuapp.com')
     const roomId = this.$route.query.id
     if (roomId) {
       this.socket.emit('partner-join', roomId)
@@ -156,13 +156,14 @@ export default {
   mounted() {
     this.isShowPopupCreateName = true
     if (this.isHost) {
-      const hostName = 'localhost:5000'
+      const hostName = window.location.host
       this.socket.on('host-id', (roomId) => {
         this.inviteLink = `${hostName}/?id=${roomId}`
         console.log(this.inviteLink)
         this.socket.on('partner-joined', () => {
           this.isShowToast = false
           this.players[1].name = 'naming...'
+          console.log('partner-joined')
         })
         this.socket.on('partnerNameCreated', (partnerName) => {
           this.players[1].name = partnerName
