@@ -4,7 +4,6 @@
     :class="[position ? 'left' : 'right', { show: show }]"
   >
     <div class="body">
-      <img src="/images/lost.png" />
       <p>Mất lượt rồi!</p>
     </div>
   </div>
