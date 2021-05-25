@@ -13,7 +13,11 @@
     <div id="dice-2" class="dice">
       <div :class="'spinner dice-' + dices[1]">
         <div class="face1">
-          <img src="/images/dice-1.png" />
+          <img
+            src="https://buhinnavi.lixil.co.jp/api/img/images/ctg_kitchen.svg"
+            height="80"
+            alt="test"
+          />
         </div>
         <div class="face2">2</div>
         <div class="face3">3</div>
