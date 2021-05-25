@@ -9,7 +9,8 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '',
+        content:
+          'https://storage.googleapis.com/gcs-buhinnavi-files-pro/images/thumbnail_buhin.png',
       },
       {
         hid: 'og:image:secure_url',
