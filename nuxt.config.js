@@ -9,8 +9,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content:
-          'https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-social.png',
+        content: '',
       },
       {
         hid: 'og:image:secure_url',
