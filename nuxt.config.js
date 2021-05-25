@@ -7,9 +7,32 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'ssđ',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'ssđ',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image:alt',
+        content:
+          'https://storage.googleapis.com/gcs-buhinnavi-files-pro/images/thumbnail_buhin.png',
+      },
+      {
+        hid: 'twitter:card',
+        property: 'twitter:image',
+        content:
+          'https://storage.googleapis.com/gcs-buhinnavi-files-pro/images/thumbnail_buhin.png',
+      },
+      {
         hid: 'og:image',
         property: 'og:image',
-        content: '',
+        content:
+          'https://storage.googleapis.com/gcs-buhinnavi-files-pro/images/thumbnail_buhin.png',
       },
       {
         hid: 'og:image:secure_url',
